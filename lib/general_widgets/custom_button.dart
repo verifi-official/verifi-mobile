@@ -22,8 +22,7 @@ class CustomButton extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
         width: double.infinity,
         decoration: BoxDecoration(
-          color:
-              isEnabled == true ? AppColor.kBGColor : AppColor.kInactiveColor,
+          color: isEnabled == true ? AppColor.kBGColor : bgColor,
           borderRadius: BorderRadius.circular(8.0),
         ),
         child: Center(

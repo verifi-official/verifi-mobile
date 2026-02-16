@@ -3,6 +3,8 @@ import 'package:go_router/go_router.dart';
 import 'package:verifi/feature/dashboard/presentation/dashboard_view.dart';
 import 'package:verifi/feature/onboarding/view/splash_screen.dart';
 import 'package:verifi/feature/reg/presentation/view/registration.dart';
+import 'package:verifi/feature/scan/presentation/view/product_purchase_option_view.dart';
+import 'package:verifi/feature/scan/presentation/view/scan_appreciation_view.dart';
 import 'package:verifi/feature/scan/presentation/view/scan_details_view.dart';
 import 'package:verifi/feature/scan/presentation/view/scan_qr_code_view.dart';
 
@@ -22,6 +24,8 @@ enum AppRoutes {
   privacyPolicy,
   helpAndSupport,
   feedback,
+  productPurchaseOptionView,
+  scanAppreciationView
 }
 
 final goRouterProvider = Provider<GoRouter>(
@@ -53,6 +57,16 @@ final goRouterProvider = Provider<GoRouter>(
           path: '/scan_detials',
           name: AppRoutes.scanDetailsView.name,
           builder: (context, state) => const ScanDetailsView(),
+        ),
+        GoRoute(
+          path: '/product_purchase_option',
+          name: AppRoutes.productPurchaseOptionView.name,
+          builder: (context, state) => const ProductPurchaseOptionView(),
+        ),
+        GoRoute(
+          path: '/scan_appreciation_view',
+          name: AppRoutes.scanAppreciationView.name,
+          builder: (context, state) => const ScanAppreciationView(),
         ),
       ],
     );

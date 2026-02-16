@@ -9,6 +9,7 @@ class AppColor {
   static const Color kWhiteColor = Color(0xFFFFFFFF);
   static const Color kTextFieldColor = Color(0xFFF2F2F2);
   static const Color kBodyTextColor = Color(0xFF121712);
+  static const Color kNoButtonColor = Color(0xFFF0F5F0);
 
   // Components
   static const Color kComponentColor = Color(0xFFFCB715); // yellow-orange guess
